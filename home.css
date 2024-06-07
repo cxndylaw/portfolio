@@ -24,7 +24,7 @@ header {
     z-index: 1000;
     width: 100%;
     padding: 15px 5%;
-    display: inline-block;
+    display: none;
 }
 
 .logo {
@@ -40,31 +40,38 @@ header {
     font-size: 45px;
 }
 
-.material-symbols-outlined {
+#menu a {
     position: fixed;
-    margin-left: 90vw;
+    margin-left: 87vw;
     margin-top: -40px;
+    padding-bottom: 30px;
 }
 
-.navlist {
-    font-size: 20px;
-    margin-left: 10px;
-    display: none;
-    padding-right: 50px;
+.drop-down {
+    display: none; /*what*/
+    border: 0.3px rgba(185, 206, 225, 0.5) solid;
+    position: fixed;
+    margin-left: 84vw;
+    margin-top: 1.5vh;
 }
 
 #menu a:hover {
     color: white;
 }
 
-.navlist li {
-    margin-left: 60px;
+#menu a:hover + .drop-down {
+    display: inline-grid;
+}
+
+.drop-down a {
+    padding: 10px;
+    font-size: 15px;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
 
-.navlist li:hover {
-    border-bottom: black solid;
+.drop-down a:hover {
+    background-color: rgba(193, 222, 247, 0.854);
 }
 
 .intro {

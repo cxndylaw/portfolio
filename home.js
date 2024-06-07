@@ -3,9 +3,10 @@ const header = document.getElementById("head");
 header.style.opacity = opacity;
 
 setTimeout(function(){
+    header.style.display = "block";
     document.getElementById("sub").style.display = "block"; 
     const time = setInterval(appear, 200);
-    document.body.style.backgroundSize = "100vw 1000vh"
+    document.getElementById("body").style.height = "1000vh"
     
     function appear() {
         if(opacity < 1)
