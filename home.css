@@ -16,6 +16,10 @@ body {
     height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     background-color: rgb(212, 234, 253, 0.5);
     position: fixed;
@@ -146,6 +150,24 @@ header {
 
 .containers p {
    padding-top: 50px;
+}
+
+#contacts {
+    margin-top: 1000px;
+}
+
+.socials {
+    position: relative;
+    padding-top: 200px;
+}
+
+#me {
+    margin-top: 1000px;
+}
+
+.aboutMe {
+    position: relative;
+    padding-top: 200px;
 }
 
 html {
