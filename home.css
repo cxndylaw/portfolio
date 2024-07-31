@@ -40,6 +40,11 @@ header {
     font-size: 45px;
 }
 
+/* #menu {
+    position: relative;
+    display: flex;
+}
+
 #menu a {
     position: fixed;
     margin-left: 87vw;
@@ -48,7 +53,7 @@ header {
 }
 
 .drop-down {
-    display: none; /*what*/
+    display: flex;
     border: 0.3px rgba(185, 206, 225, 0.5) solid;
     position: fixed;
     margin-left: 84vw;
@@ -72,12 +77,34 @@ header {
 
 .drop-down a:hover {
     background-color: rgba(193, 222, 247, 0.854);
+} */
+
+.option {
+    position: fixed;
+    top: 40%;
+    margin-left: 65vw;
+    display: inline-grid;
+    
+}
+
+.option a {
+    font-size: 30px;
+    margin: 2vh;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.7s;
+}
+
+.option a:hover {
+    color: rgb(173, 183, 189) !important;
+    border-bottom: 2px solid rgb(173, 183, 189);
+    margin-left: -10px;
 }
 
 .intro {
     position: relative;
     top: 40vh;
-    left: 15vw;
+    margin-left: 15vw;
 }
 
 .intro h1{
@@ -101,3 +128,26 @@ header {
 @keyframes typing {
     from { width: 0; }
 }
+
+#project {
+    margin-top: 1000px;
+}
+
+.list {
+    position: relative;
+    padding-top: 200px;
+}
+
+.containers {
+    position: relative;
+    display: block;
+    width: 40px;
+}
+
+.containers p {
+   padding-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+} 

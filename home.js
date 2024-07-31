@@ -2,8 +2,10 @@ let opacity = 0;
 const header = document.getElementById("head");
 header.style.opacity = opacity;
 
+
 setTimeout(function(){
     header.style.display = "block";
+    // content.style.display = "inline-grid";
     document.getElementById("sub").style.display = "block"; 
     const time = setInterval(appear, 200);
     document.getElementById("body").style.height = "1000vh"
